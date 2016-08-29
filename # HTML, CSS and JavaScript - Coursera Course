@@ -125,11 +125,11 @@ var theLeftSide =
 **A function generateFaces() is created**
 
 * In this function the faces are created in a loop. The loop executes *numberOfFaces* times. In each iteration: 
-	- An *img* is created using *createElement()*
-	- The img *src* attribute is set so that the appropriate image filename is used e.g. `img.src="smile.png";`
-	- The position of an image is controlled by the *top* and *left* values. The img *top* value is set to be a random value in an appropriate range. For example, if the height of the div is 500 and the height of the image is 100, then an appropriate range for the random *top* value of the newly created image is 0 to 400. Use *style.top* to set this. 
-	- The img *left* position is set to be a random value in an appropriate range. For example, if the width of the div is 500 and the width of the image is 100, then an appropriate range for the random *left* value of the newly created image is 0 to 400. Use *style.left* to set this.
-	- Add the newly created image to the *leftSide* div using *appendChild()*
+    - An *img* is created using *createElement()*
+    - The img *src* attribute is set so that the appropriate image filename is used e.g. `img.src="smile.png";`
+    - The position of an image is controlled by the *top* and *left* values. The img *top* value is set to be a random value in an appropriate range. For example, if the height of the div is 500 and the height of the image is 100, then an appropriate range for the random *top* value of the newly created image is 0 to 400. Use *style.top* to set this. 
+    - The img *left* position is set to be a random value in an appropriate range. For example, if the width of the div is 500 and the width of the image is 100, then an appropriate range for the random *left* value of the newly created image is 0 to 400. Use *style.left* to set this.
+    - Add the newly created image to the *leftSide* div using *appendChild()*
 
 **Start the Function**
 
@@ -176,7 +176,7 @@ var theBody =
 
 ```
 theLeftSide.lastChild.onclick = function nextLevel(event){
-	event.stopPropagation();
+    event.stopPropagation();
         numberOfFaces += 5;
         generateFaces();
 };
