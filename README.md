@@ -12,17 +12,17 @@
 
 This assessment task requires you to make an interactive game. When the game starts, five faces are shown on the left and four are shown on the right. This is illustrated below.
 
-![Beginning of Matching Game](http://home.cse.ust.hk/~rossiter/mooc/matching_game/screen1.png)
+![Beginning of Matching Game](img/BeginningOfMatchingGame.png?raw=true "Beginning of Matching Game")
 
 The left and right sides are identical, except for one thing: the left side has one extra face. The user needs to click on that extra face. If anything except the correct face is clicked, a message is displayed saying that the game is over. If the correct face is clicked, all the currently displayed faces are deleted and a new set of faces is shown at random positions. Each time a new set of faces is shown there will be 5 more faces than before, on both the left and the right sides. There will always be one extra face shown on the left.
 
 For example, let’s imagine you are playing the game shown in the previous figure. After clicking on the extra face (at the top) all the faces disappear and the following new set of faces are shown. As you can see, on both sides 5 more faces than before are shown.
 
-![Level Two of Matching Game](http://home.cse.ust.hk/~rossiter/mooc/matching_game/screen2.png)
+![Level Two of Matching Game](img/LevelTwoOfMatchingGame.png?raw=true "Level Two of Matching Game")
 
 After playing the game by correctly clicking on the extra face many times, a lot of faces will be shown. This is illustrated below.
 
-![Lot of Faces in the Matching Game](http://home.cse.ust.hk/~rossiter/mooc/matching_game/screen3.png)
+![Lot of Faces in the Matching Game](img/LotOfFacesInTheMatchingGame.png?raw=true "Lot of Faces in the Matching Game")
 
 #### **Technical Overview**
 
@@ -67,7 +67,7 @@ For Part 1: [Web page content without JavaScript]
 
 The result will look like this when viewed in a browser. As you can see, only the instructions and the middle line are visible.
 
-![Web page content without JavaScript](http://home.cse.ust.hk/~rossiter/mooc/matching_game/screen4.png)
+![Web page content without JavaScript](img/WebPageContentWithoutJavaScript.png?raw=true "Web page content without JavaScript")
 
 For part 1, the content of the file is as follows.
 
@@ -108,7 +108,7 @@ For Part 2: [Generating the left side images]
 * For this stage you need to add JavaScript code which generates *numberOfFaces* images on the left side. (There are no right side faces in part 2).
 * The result will look like this when viewed in a browser.
 
-![Generating the left side images](http://home.cse.ust.hk/~rossiter/mooc/matching_game/screen5.png)
+![Generating the left side images](img/GeneratingTheLeftSideImages.png?raw=true "Generating the left side images")
 
 The JavaScript code for this stage is executed when the page is loaded. It does the following.
 
@@ -152,7 +152,7 @@ var theRightSide =
 * Then, add *leftSideImages* to the *rightSide* div
 * The DOM will look like this:
 
-![Handling the right side](http://home.cse.ust.hk/~rossiter/mooc/matching_game/dom_structure.png)
+![Handling the right side](img/HandlingTheRightSide.png?raw=true "Handling the right side")
 
 #### **Part 4**
 
@@ -212,8 +212,7 @@ is one way to show a message to the user
 means that from now onwards nothing will happen when the user clicks anywhere in the web page
 * The line 
 `theLeftSide.lastChild.onclick = null;`
-means that from now onwards nothing will happen when the user clicks on the extra f
-ace.
+means that from now onwards nothing will happen when the user clicks on the extra face.
 
 **Delete the child nodes**
 

@@ -65,7 +65,6 @@ function deleteAllFaces(){
 }
 
 function cleanBody(){
-	console.log("Cleaning body");
 	while(theBody.firstChild){
 		theBody.removeChild(theBody.firstChild);
 	}
